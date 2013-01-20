@@ -1,0 +1,50 @@
+<div class="hero-unit">
+	<%= image_tag("cherryberryquiltsstitched.png", :class => "image-asset", :width => "175", :alt => "Cherry Berry Quilts Logo") %>
+	<%= image_tag("store.jpg", :id => "store-image", :class => "image-asset", :width => "315", :alt => "Cherry Berry Quilts Store") %>
+
+	<h1>Welcome!</h1>
+	<p>
+		Keep up with the latest on Fabric Shpiments, Sewing Machine Specials, and Classes
+	</p>
+	<p>
+		Call us: (909) 795-9090
+	</p>
+
+	<p>
+		Follow us on Twitter: <a href="https://twitter.com/CherryBerryQ">@CherryBerryQ</a>
+	</p>
+	<p>
+		Subscribe to our newsletter: <a href="http://visitor.r20.constantcontact.com/d.jsp?llr=pc44fckab&p=oi&m=1110322445391"  target="_blank">Click Here</a>
+	</p>
+</div>
+
+<div>
+	<script type="text/javascript" charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+	<script type="text/javascript">
+		new TWTR.Widget({
+			version : 2,
+			type : 'profile',
+			rpp : 10,
+			interval : 30000,
+			width : 'auto',
+			height : 300,
+			theme : {
+				shell : {
+					background : '#f9ec8d',
+					color : '#730e11'
+				},
+				tweets : {
+					background : '#e7e0c3',
+					color : '#730e11',
+					links : '#334e81'
+				}
+			},
+			features : {
+				scrollbar : true,
+				loop : false,
+				live : false,
+				behavior : 'all'
+			}
+		}).render().setUser('CherryBerryQ').start();
+	</script>
+</div>

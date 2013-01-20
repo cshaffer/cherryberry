@@ -1,3 +1,77 @@
 @import "bootstrap";
 body { padding-top: 60px; }
+$maroon: #730e12;
+$tan: #e7e0c3;
+$darkblue: #334e81;
+$darktan: #730e11;
+.navbar-inner {
+  min-height: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #e7e0c3, #d1c492);
+  background-image: -ms-linear-gradient(top, #e7e0c3, #d1c492);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e7e0c3), to(#d1c492));
+  background-image: -webkit-linear-gradient(top, #e7e0c3, #d1c492);
+  background-image: -o-linear-gradient(top, #e7e0c3, #d1c492);
+  background-image: linear-gradient(top, #e7e0c3, #d1c492);
+  background-repeat: repeat-x;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#'e7e0c3, endColorstr='#'d1c492, GradientType=0);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+
+.navbar .brand {
+  float: left;
+  display: block;
+  padding: 8px 20px 12px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #730e12;
+}
+
+.navbar .divider-vertical {
+  height: 41px;
+  width: 1px;
+  margin: 0 9px;
+  overflow: hidden;
+  background-color: #730e12;
+  border-right: 1px solid #542425;
+}
+
+.hero-unit, .well {
+  background-color: $tan;
+  p, address {
+    color: $darktan;
+  }
+  a {
+    color: $darkblue;
+    &:hover {
+      color: $darkblue;
+    }   
+  }
+}
+
+a {
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
+
+h1 {
+  color: white;
+}
+
+footer {
+  padding-top: 30px;
+}
+
 @import "bootstrap-responsive";

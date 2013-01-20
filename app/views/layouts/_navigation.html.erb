@@ -1,26 +1,21 @@
-<%= link_to "Cherryberry", root_path, :class => 'brand' %>
+<%= link_to "Cherry Berry Quilts", root_path, :class => 'brand' %>
 <ul class="nav">
-  <% if user_signed_in? %>
-    <li>
-    <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>
-    </li>
-  <% else %>
-    <li>
-    <%= link_to 'Login', new_user_session_path %>
-    </li>
-  <% end %>
-  <% if user_signed_in? %>
-    <li>
-    <%= link_to 'Edit account', edit_user_registration_path %>
-    </li>
-    <% if current_user.has_role? :admin %>
-      <li>
-      <%= link_to 'Admin', users_path %>
-      </li>
-    <% end %>
-  <% else %>
-    <li>
-    <%= link_to 'Sign up', new_user_registration_path %>
-    </li>
-  <% end %>
+	<li>
+		<%= link_to "Home", page_path("home") %>
+	</li>
+	<li>
+		<%= link_to "Classes & Events", page_path("events") %>
+	</li>
+	<li>
+		<%= link_to "Longarm Services", page_path("services") %>
+	</li>
+	<li>
+		<%= link_to "About", page_path("about") %>
+	</li>
+	<ul class="nav pull-right">
+		<li class="divider-vertical"></li>
+		<li>
+			<li><a href="http://www.quiltersresources.net">QuiltersResources.net</a></li>
+		</li>
+	</ul>
 </ul>
